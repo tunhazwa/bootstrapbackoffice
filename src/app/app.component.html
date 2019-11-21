@@ -1,0 +1,56 @@
+<!--the header of the navbar-->
+<nav class="navbar navbar-light bg-light">
+        <a class="text-white">Krungthai</a>
+        <!--ml-auto =to set icon to be on top right side-->
+        <i class="material-icons ml-auto custom-exit">exit_to_app</i>
+        
+</nav>
+<!--left side for sidebar-->
+<div class="row">
+    <div class="col-lg-3 my-col">
+       <nav id="sidebar">
+           <ul class="list-unstyled components">
+               <li class="active">
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>dashboard</mat-icon>Dashboard</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/employees']"><mat-icon>recent_actors</mat-icon>Search Customer</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>account_circle</mat-icon>Register NEXT</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/configurations']"><mat-icon>settings-applications</mat-icon>Configuration</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>event</mat-icon>Campaign</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>record_voice_over</mat-icon>Announcement</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>aspect_ratio</mat-icon>Theme</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>sms_failed</mat-icon>Greeting Message</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>notifications</mat-icon>Push/Inbox Notification</button>
+               </li>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/employees']"><mat-icon>account_balance</mat-icon>Bank List</button>
+               </li>
+               <br>
+               <br>
+               <hr>
+               <li>
+                    <button class="btn btn-block text-left my-text" [routerLink]="['/dashboards']"><mat-icon>help_outline</mat-icon>Support</button>
+               </li>
+           </ul>
+       </nav>         
+    </div>
+    <!--for right side-->
+<div class="col-lg-8 ">
+     <router-outlet></router-outlet>
+ </div>
+</div>
